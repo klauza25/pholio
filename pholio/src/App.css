@@ -1,0 +1,24 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(252, 252, 252, 0.014); /* Fond blanc avec 70% d'opacité */
+  backdrop-filter: blur(3px); /* Ajoute un flou à l'arrière-plan [[3]] */
+  border-bottom: 0px solid rgba(0, 0, 0, 0.1); /* Optionnel : séparation visuelle */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar a {
+ 
+  /* Texte blanc */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #4299e1; /* Couleur au survol */
+}
+
+@plugin "daisyui";

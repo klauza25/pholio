@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="f">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+
+
+
+<!-- 
+<div class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <form id="inscriptionForm" class="bg-white p-6 rounded-lg shadow-lg w-96">
+      <h2 class="text-xl font-semibold text-center mb-4">Inscription</h2>
+
+   
+      <label class="block mb-2">Nom</label>
+      <input type="text" class="w-full border rounded-md p-2 mb-4" placeholder="Votre nom" required>
+
+   
+      <label class="block mb-2">Prénom</label>
+      <input type="text" class="w-full border rounded-md p-2 mb-4" placeholder="Votre prénom" required>
+
+    
+      <label class="block mb-2">Date de naissance</label>
+      <input type="date" class="w-full border rounded-md p-2 mb-4" required>
+
+     
+      <label class="block mb-2">Pays</label>
+      <input type="text" class="w-full border rounded-md p-2 mb-4" placeholder="Votre pays" required>
+
+
+      <label class="block mb-2">Ville</label>
+      <input type="text" class="w-full border rounded-md p-2 mb-4" placeholder="Votre ville" required>
+
+      
+      <label class="block mb-2">Formation</label>
+      <select id="formation" class="w-full border rounded-md p-2 mb-4" required>
+          <option value="">Sélectionnez une formation</option>
+          <option value="langue">Langue</option>
+          <option value="professionnelle">Professionnelle</option>
+      </select>
+
+      
+      <div id="langues" class="hidden">
+          <label class="block mb-2">Langues vivantes :</label>
+          <div class="space-y-2">
+              <label class="flex items-center">
+                  <input type="checkbox" name="langues" value="Anglais" class="mr-2">
+                  Anglais
+              </label>
+              <label class="flex items-center">
+                  <input type="checkbox" name="langues" value="Espagnol" class="mr-2">
+                  Espagnol
+              </label>
+              <label class="flex items-center">
+                  <input type="checkbox" name="langues" value="Chinois" class="mr-2">
+                  Chinois
+              </label>
+              <label class="flex items-center">
+                  <input type="checkbox" name="langues" value="Français" class="mr-2">
+                  Français
+              </label>
+          </div>
+          <p id="error-langue" class="text-red-500 text-sm hidden mt-2">Sélectionnez au moins une langue.</p>
+      </div>
+
+      
+      <div id="formations" class="hidden">
+          <label class="block mb-2">Formations professionnelles :</label>
+          <div class="space-y-2">
+              <label class="flex items-center">
+                  <input type="checkbox" name="formations" value="Développement Web" class="mr-2">
+                  Développement Web
+              </label>
+              <label class="flex items-center">
+                  <input type="checkbox" name="formations" value="Gestion de projet" class="mr-2">
+                  Gestion de projet
+              </label>
+              <label class="flex items-center">
+                  <input type="checkbox" name="formations" value="Marketing digital" class="mr-2">
+                  Marketing digital
+              </label>
+              <label class="flex items-center">
+                  <input type="checkbox" name="formations" value="Réseaux et télécommunications" class="mr-2">
+                  Réseaux et télécommunications
+              </label>
+          </div>
+          <p id="error-formation" class="text-red-500 text-sm hidden mt-2">Sélectionnez au moins une formation.</p>
+      </div>
+
+    
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-md mt-4 hover:bg-blue-700">
+          Valider
+      </button>
+  </form>
+
+  <script>
+      document.getElementById("formation").addEventListener("change", function() {
+          const langues = document.getElementById("langues");
+          const formations = document.getElementById("formations");
+
+          if (this.value === "langue") {
+              langues.classList.remove("hidden");
+              formations.classList.add("hidden");
+          } else if (this.value === "professionnelle") {
+              formations.classList.remove("hidden");
+              langues.classList.add("hidden");
+          } else {
+              langues.classList.add("hidden");
+              formations.classList.add("hidden");
+          }
+      });
+
+      document.getElementById("inscriptionForm").addEventListener("submit", function(event) {
+          const formationValue = document.getElementById("formation").value;
+          const languesChecked = document.querySelectorAll("input[name='langues']:checked");
+          const formationsChecked = document.querySelectorAll("input[name='formations']:checked");
+          const errorLangue = document.getElementById("error-langue");
+          const errorFormation = document.getElementById("error-formation");
+
+          let isValid = true;
+
+          if (formationValue === "langue" && languesChecked.length === 0) {
+              event.preventDefault(); 
+              errorLangue.classList.remove("hidden");
+              isValid = false;
+          } else {
+              errorLangue.classList.add("hidden");
+          }
+
+          if (formationValue === "professionnelle" && formationsChecked.length === 0) {
+              event.preventDefault(); 
+              errorFormation.classList.remove("hidden");
+              isValid = false;
+          } else {
+              errorFormation.classList.add("hidden");
+          }
+
+          return isValid;
+      });
+  </script>
+
+</div> -->
