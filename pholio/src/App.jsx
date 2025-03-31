@@ -1,6 +1,15 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import img from "./assets/img/br.jpg";
+import Section from './components/Section'
+import Project from './components/Project'
+import Typed from 'typed.js';
+
+const typed = new Typed('#element', {
+  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+  typeSpeed: 50,
+});
+
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -35,7 +44,7 @@ function App() {
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-blue-500 transition">
+            <a href="#comp" className="hover:text-blue-500 transition">
               Compétences
             </a>
           </li>
@@ -91,7 +100,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-400">
+              <a href="#comp" className="hover:text-blue-400">
                 Compétences
               </a>
             </li>
@@ -106,9 +115,15 @@ function App() {
       {/* Section de présentation */}
       <div className="h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-10 p-10">
         <div className="text-center md:text-left">
-          <h1 className="text-4xl font-bold">
-            Je suis <span className="text-blue-700 uppercase">Klaus Samba</span>
-          </h1>
+        
+        <h1>
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
+
+         
+         
           <p className="mt-4">
             Développeur passionné par le web et les technologies modernes.
           </p>
@@ -120,6 +135,8 @@ function App() {
           className="rounded-full h-[250px] w-[250px] md:h-[300px] md:w-[300px] border-4 border-blue-700"
         />
       </div>
+      <Section/>
+    <Project/>
     </div>
   );
 }

@@ -1,12 +1,53 @@
 @import "tailwindcss";
 
-
 body{
- 
+    
+    scroll-behavior: smooth;
+}
 
+.containers{
+ 
+display: inline-block;
   
 }
 
+.texts{
+
+    font-size: 2rem;
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation : 
+    cursor .4s step-end infinite alternate
+    
+    ;
+   
+
+    
+}
+
+
+@keyframes cursor {
+
+    50% {
+        border-color: transparent;
+    }
+    
+}
+
+@keyframes typing {
+
+    from {
+        background-color: aqua;
+    }
+
+    to{
+        background-color: red;
+    }
+    
+}
 /* background: url(./assets/img/br.jpg) center;
 background-size: cover;
 background-repeat: no-repeat; */
